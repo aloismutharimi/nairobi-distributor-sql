@@ -1,3 +1,17 @@
+'''
+A Nairobi wholesale distributor tracks orders in a SQLite database. 
+The sales manager asks five questions every Monday morning that currently take 45 minutes to answer manually from Excel.
+
+Create a SQLite database with an orders table (order_id, customer_name, county, product, quantity, unit_price, order_date, status). 
+Insert at least 20 realistic rows. 
+Answer these five questions with SQL: (1) All orders from Mombasa county. (2) Top 10 orders by total value. 
+(3) Total revenue per county. (4) All pending orders over KES 50,000. (5) The three best-selling products by quantity. 
+Print each result using pandas read_sql_query.
+
+Push to GitHub. Add a pricing note: what would you charge to build and maintain this reporting setup for a distributor? 
+Separate the setup fee from the monthly support.
+'''
+
 import sqlite3
 import pandas as pd
 
